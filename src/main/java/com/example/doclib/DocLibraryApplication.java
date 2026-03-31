@@ -55,7 +55,7 @@ public class DocLibraryApplication {
         log.info("║  GET    /api/monitor/system      (JVM metrics)    ║");
         log.info("╠══════════════════════════════════════════════════╣");
         log.info("║  ACTUATOR MONITORING:                             ║");
-        log.info("║  /actuator/health    → app + MongoDB health       ║");
+        log.info("║  /actuator/health    → app + PostgreSQL health    ║");
         log.info("║  /actuator/metrics   → JVM, HTTP, cache metrics   ║");
         log.info("║  /actuator/loggers   → view/change log levels     ║");
         log.info("╚══════════════════════════════════════════════════╝");

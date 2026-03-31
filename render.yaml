@@ -9,15 +9,15 @@ services:
     envVars:
       - key: PORT
         value: 10000
-      - key: JDBC_DATABASE_URL
+      - key: SPRING_DATASOURCE_URL
         fromDatabase:
           name: smart-doc-db
           property: connectionString
-      - key: JDBC_DATABASE_USERNAME
+      - key: SPRING_DATASOURCE_USERNAME
         fromDatabase:
           name: smart-doc-db
           property: user
-      - key: JDBC_DATABASE_PASSWORD
+      - key: SPRING_DATASOURCE_PASSWORD
         fromDatabase:
           name: smart-doc-db
           property: password
