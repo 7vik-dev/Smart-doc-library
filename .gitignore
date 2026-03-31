@@ -18,13 +18,13 @@ target/
 Thumbs.db
 
 # React build output
-smart-doc-library/frontend-react/dist/
-smart-doc-library/frontend-react/node_modules/
-smart-doc-library/frontend-react/.eslintcache
+frontend-react/dist/
+frontend-react/node_modules/
+frontend-react/.eslintcache
 
 # Logs
 *.log
 logs/
 
 # Local configuration
-smart-doc-library/src/main/resources/application-local.properties
+src/main/resources/application-local.properties
