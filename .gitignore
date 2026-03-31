@@ -1,0 +1,30 @@
+# Maven build output
+target/
+*.jar
+*.war
+*.ear
+
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# React build output
+smart-doc-library/frontend-react/dist/
+smart-doc-library/frontend-react/node_modules/
+smart-doc-library/frontend-react/.eslintcache
+
+# Logs
+*.log
+logs/
+
+# Local configuration
+smart-doc-library/src/main/resources/application-local.properties

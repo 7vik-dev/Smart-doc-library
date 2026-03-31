@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: smart-doc-library
+    env: docker
+    dockerContext: smart-doc-library
+    dockerfilePath: smart-doc-library/Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: JDBC_DATABASE_URL
+        fromDatabase:
+          name: smart-doc-db
+          property: connectionString
+      - key: JDBC_DATABASE_USERNAME
+        fromDatabase:
+          name: smart-doc-db
+          property: user
+      - key: JDBC_DATABASE_PASSWORD
+        fromDatabase:
+          name: smart-doc-db
+          property: password
+
+databases:
+  - name: smart-doc-db
+    databaseName: smart_doc_library
+    user: smart_doc_user
+    plan: free
+    region: oregon
